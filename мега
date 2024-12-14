@@ -1,0 +1,55 @@
+class Toys:
+    def __init__(self, cars, animals, lego):
+        self.cars= cars
+        self.animals=animals
+        self.lego = lego
+
+    def toy(self):
+        return ("ирать")
+        
+   
+class Cars(Toys):
+    def __init__(self,dvigatel,rul,coleso):
+        super().__init__(dvigatel,rul,coleso)
+        self.dvigatel = dvigatel
+        self.rul= rul
+        self.coleso= coleso
+
+    def car(dvigatel):
+        return "заводить"
+
+    def cer(rul):
+        return "водить"
+
+    def cyr(coleso):
+        return "ехать"
+
+class Animals(Toys):
+    def  __init__(self, lev, cow, dog):
+        super().__init__(lev, cow, dog)
+        self.lev=lev
+        self.cow=cow
+        self.dog=dog
+
+    def f(lew):
+        return "рычать"
+    def f2(cow):
+        return "мычит"
+
+    def f3(dog):
+        return "гавкает"
+
+class Lego(Toys):
+    def __init__(self, detal, chelovek):
+        super().__init__(detal, chelovek)     
+        self.detal=detal
+        self.chelovek=chelovek
+
+    def d(detal):
+        return "строить"
+    def c(chelovek):
+        return "собрать"  
+
+
+print(Cars(2,3.4,"fff"))
+
